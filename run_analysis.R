@@ -1,4 +1,5 @@
-library(dplyr);
+library(dplyr)
+library(plyr)
 library(data.table);
 
 #Fetch and extract data files
@@ -69,6 +70,7 @@ master<-merge(master,act_labels)
 #5. From the data set in step 4, creates a second, independent tidy data set with
 #    the average of each variable for each activity and each subject.
 tidy<-ddply(master,.(subj_id,act_id),function(x)colMeans(x[,3:88]))
-write.csv(tidy,file="tidy.csv")
 
 setwd("../")
+write.table(tidy,file="tidy.txt",row.names=FALSE)
+rm(list=ls())
