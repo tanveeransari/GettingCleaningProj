@@ -8,7 +8,7 @@ if(!file.exists("UCI.zip")) {
 }
 
 setwd("UCI HAR Dataset/")
-# Read all files
+# Read all relevant files in
   act_labels<-read.csv("activity_labels.txt",sep = " ", header=F)
   names(act_labels)<-c("act_id","act_desc")
 
@@ -46,7 +46,7 @@ master=cbind(subject$subj_id,y$act_id,master)
 names(master)[1]="subj_id"
 names(master)[2]="act_id"
 #Use tbl_df for better printing
-#master<-tbl_df(master)
+master<-tbl_df(master)
 #4. - label the dataset with descriptive variable names
 names(master)[3:563]<-as.character(features$feat_desc)
 
