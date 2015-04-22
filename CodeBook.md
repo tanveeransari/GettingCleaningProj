@@ -18,9 +18,9 @@ low-pass filter into body acceleration and gravity. The gravitational forceis as
 A video of the experiment including an example of the 6 recorded activities   
 with one of the participants can be seen in the following link [http://www.youtube.com/watch?v=XOEN9W05_4A]
 
-Number of Instances | Number of Attributes | Characteristics | Daet Donated
+Number of Instances | Number of Attributes | Characteristics | Date Donated
 ------|------|------|------
-10299|561|Multivariate, Time-Series, 2012-12-10
+10299|561|Multivariate, Time-Series| 2012-12-10
 
 #Attribute Information  
 For each record in the dataset it is provided:  
